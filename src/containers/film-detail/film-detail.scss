@@ -1,0 +1,99 @@
+.film-detail-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.film-header {
+  margin-bottom: 20px;
+
+  .film-title {
+    font-size: 2.5rem;
+  }
+}
+
+.film-detail-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap: 20px;
+
+  .film-color-box {
+    width: 45%;
+    max-width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    .film-color-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  .film-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    .film-description {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    button {
+      color: inherit;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+
+      &.add {
+        background-color: green;
+
+        &:hover {
+          background-color: #66C266;
+        }
+      }
+
+      &.remove {
+        background-color: red;
+
+        &:hover {
+          background-color: #A32222;
+        }
+      }
+    }
+  }
+}
+
+.additional-info {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+}
